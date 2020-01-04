@@ -1,0 +1,11 @@
+﻿@model List<DemoWebApplication.Models.ApplicationClasses.StudentsAc>
+@{
+    ViewData["Title"] = "Students List";
+}
+<h1>@ViewData["Title"]</h1>
+@foreach (var student in Model)
+{
+    <p>First name:@student.FirstName</p>
+    <p>Last name:@student.LastName</p>
+    <hr />
+}
